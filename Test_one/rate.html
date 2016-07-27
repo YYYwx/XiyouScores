@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我要评价</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- loading mui -->
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<!-- custorm style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<header id="header" class="mui-bar mui-bar-nav">
+		<h1 class="mui-title">西安邮电大学</h1>
+		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="javascript:history.go(-1)"><span class="mui-icon mui-icon-left-nav"></span></a>
+		<a class="mui-icon mui-icon-bars mui-pull-right" href="#topPopover"></a>
+	</header>
+	<!-- 右上角弹出菜单 -->
+	<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="chengjichaxun.html">Query results</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="rate.html">Evaluation of Teachers</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="user_bind.html">User Registration</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="personCenter.html" onclick="Person()">Personal Center</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="login.html">Sign Out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 主内容部分 -->
+	<div class="content">
+		<section class="xueqi">
+			<div class="class">
+				<label id="classResult">Assess Teacher</label>
+			</div>
+		</section>
+		<section class="rate_group">
+			<table>
+				<tr>
+					<th>Teacher name</th>
+					<th>Stars</th>
+					<th>Assess</th>
+				</tr>
+				<tr>
+					<td>***</td>
+					<td><span>5</span></td>
+					<td><button onclick="javascript:window.location.href='rate_sub.html'" type="button" class="mui-btn mui-btn-success mui-btn-block">evaluation</button></td>
+				</tr>
+				<tr>
+					<td>***</td>
+					<td><span>4</span></td>
+					<td><button onclick="javascript:window.location.href='rate_sub.html'" type="button" class="mui-btn mui-btn-success mui-btn-block">evaluation</button></td>
+				</tr>
+				<tr>
+					<td>***</td>
+					<td><span>1</span></td>
+					<td><button onclick="javascript:window.location.href='rate_sub.html'" type="button" class="mui-btn mui-btn-success mui-btn-block">evaluation</button></td>
+				</tr>
+				<tr>
+					<td>***</td>
+					<td><span>5</span></td>
+					<td><button onclick="javascript:window.location.href='rate_sub.html'" type="button" class="mui-btn mui-btn-success mui-btn-block">evaluation</button></td>
+				</tr>
+			</table>
+			<button type="button" class="mui-btn mui-btn-success mui-btn-block">Submit evaluation</button>
+		</section>
+	</div>
+	<script src="js/mui.min.js"></script>
+</body>
+</html>
